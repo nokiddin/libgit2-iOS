@@ -613,6 +613,7 @@
 			children = (
 				4CA5BFFD1982618100941E10 /* xdiff */,
 				4CA5C00D1982618100941E10 /* zstream.h */,
+				52BEC744147D89C400C35467 /* transports */,
 				4CA5C00E1982618100941E10 /* transports */,
 				4CA5C01A1982618100941E10 /* unix */,
 				4CA5C01E1982618100941E10 /* realpath.c */,
@@ -793,7 +794,6 @@
 				52BEC740147D89C400C35467 /* thread-utils.c */,
 				52BEC741147D89C400C35467 /* thread-utils.h */,
 				52BEC742147D89C400C35467 /* transport.c */,
-				52BEC744147D89C400C35467 /* transports */,
 				52BEC748147D89C400C35467 /* tree-cache.c */,
 				52BEC749147D89C400C35467 /* tree-cache.h */,
 				52BEC74A147D89C400C35467 /* tree.c */,
