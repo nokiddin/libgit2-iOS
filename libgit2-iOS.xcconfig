@@ -1,0 +1,12 @@
+//
+//  iosetaauthui-common.xcconfig
+//  iosetaauthui
+//
+//  Created by N K on 12/9/14.
+//
+//
+
+#include "from-INCLUDE.xcconfig"
+#include "from-CPATH.xcconfig"
+
+HEADER_SEARCH_PATHS = $(inherited) ${HEADERS_FROM_CPATH} ${HEADERS_FROM_INCLUDE}

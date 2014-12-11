@@ -1,0 +1,17 @@
+#!/bin/bash
+envvar="$1" || envvar="CPATH";
+
+[[ "$envvar" =~ ^[A-Za-z_][A-Za-z0-9_]*$ ]] || exit 2; 
+
+eval echo "\${${envvar}}:" | 
+	while read -d: path; do
+	if [ -z "$path" ]; then continue; fi 
+	if [ -z "$first" ]; then 
+		first="HEADERS_FROM_$envvar = ";
+		echo -n "$first";
+	fi
+	raw="\"$path\"";
+	byconfigplat="\"$path/\${CONFIGURATION}-\${PLATFORM_NAME}\"";
+	byarch="\"$path/\${CURRENT_ARCH}\"";
+	echo -n " $byarch $byconfigplat $raw "; # have a leading space to keep safe distance from previous iteration 
+	done 

@@ -6,7 +6,23 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		4C51D56B1A36BCBA00D5C3EC /* git2-iOS-univ */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4C51D56C1A36BCBA00D5C3EC /* Build configuration list for PBXAggregateTarget "git2-iOS-univ" */;
+			buildPhases = (
+				4C51D5711A36BD3600D5C3EC /* ShellScript */,
+			);
+			dependencies = (
+				4C51D5701A36BD1000D5C3EC /* PBXTargetDependency */,
+			);
+			name = "git2-iOS-univ";
+			productName = univ;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		4C51D56A1A36B7BC00D5C3EC /* gitsslctx.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C0AC4DA1A306D260097B708 /* gitsslctx.c */; };
 		4CA5BF23198256C800941E10 /* attr_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5BF22198256C800941E10 /* attr_file.c */; };
 		4CA5BF90198256FB00941E10 /* array.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA5BF24198256FB00941E10 /* array.h */; };
 		4CA5BF91198256FB00941E10 /* attr_file.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA5BF25198256FB00941E10 /* attr_file.h */; };
@@ -143,7 +159,6 @@
 		4CA5C0371982618100941E10 /* smart_protocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5C0171982618100941E10 /* smart_protocol.c */; };
 		4CA5C0381982618100941E10 /* ssh.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5C0181982618100941E10 /* ssh.c */; };
 		4CA5C0391982618100941E10 /* winhttp.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5C0191982618100941E10 /* winhttp.c */; };
-		4CA5C03A1982618100941E10 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5C01B1982618100941E10 /* map.c */; };
 		4CA5C03B1982618100941E10 /* posix.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA5C01C1982618100941E10 /* posix.h */; };
 		4CA5C03C1982618100941E10 /* realpath.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5C01D1982618100941E10 /* realpath.c */; };
 		4CA5C03D1982618100941E10 /* realpath.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5C01E1982618100941E10 /* realpath.c */; };
@@ -218,16 +233,12 @@
 		52BEC7B1147D89C400C35467 /* thread-utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC740147D89C400C35467 /* thread-utils.c */; };
 		52BEC7B2147D89C400C35467 /* thread-utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC741147D89C400C35467 /* thread-utils.h */; };
 		52BEC7B3147D89C400C35467 /* transport.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC742147D89C400C35467 /* transport.c */; };
-		52BEC7B5147D89C400C35467 /* git.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC745147D89C400C35467 /* git.c */; };
-		52BEC7B6147D89C400C35467 /* http.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC746147D89C400C35467 /* http.c */; };
-		52BEC7B7147D89C400C35467 /* local.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC747147D89C400C35467 /* local.c */; };
 		52BEC7B8147D89C400C35467 /* tree-cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC748147D89C400C35467 /* tree-cache.c */; };
 		52BEC7B9147D89C400C35467 /* tree-cache.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC749147D89C400C35467 /* tree-cache.h */; };
 		52BEC7BA147D89C400C35467 /* tree.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC74A147D89C400C35467 /* tree.c */; };
 		52BEC7BB147D89C400C35467 /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC74B147D89C400C35467 /* tree.h */; };
 		52BEC7BC147D89C400C35467 /* tsort.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC74C147D89C400C35467 /* tsort.c */; };
 		52BEC7BD147D89C400C35467 /* map.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC74E147D89C400C35467 /* map.c */; };
-		52BEC7BE147D89C400C35467 /* posix.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC74F147D89C400C35467 /* posix.h */; };
 		52BEC7BF147D89C400C35467 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC750147D89C400C35467 /* util.c */; };
 		52BEC7C0147D89C400C35467 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC751147D89C400C35467 /* util.h */; };
 		52BEC7C1147D89C400C35467 /* vector.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC752147D89C400C35467 /* vector.c */; };
@@ -254,7 +265,20 @@
 		52BEC7F9147D8A0200C35467 /* zutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC7E5147D8A0200C35467 /* zutil.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4C51D56F1A36BD1000D5C3EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BEC6C8147D88C900C35467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52BEC6E4147D88EB00C35467;
+			remoteInfo = "git2-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4C022EDA1A39E81000E514E2 /* libgit2-iOS.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "libgit2-iOS.xcconfig"; sourceTree = "<group>"; };
+		4C0AC4DA1A306D260097B708 /* gitsslctx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gitsslctx.c; sourceTree = "<group>"; };
+		4C0AC4DC1A306D4C0097B708 /* gitsslctx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gitsslctx.h; sourceTree = "<group>"; };
 		4CA5BF22198256C800941E10 /* attr_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = attr_file.c; path = libgit2/src/attr_file.c; sourceTree = SOURCE_ROOT; };
 		4CA5BF24198256FB00941E10 /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = array.h; path = libgit2/src/array.h; sourceTree = SOURCE_ROOT; };
 		4CA5BF25198256FB00941E10 /* attr_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = attr_file.h; path = libgit2/src/attr_file.h; sourceTree = SOURCE_ROOT; };
@@ -391,7 +415,6 @@
 		4CA5C0171982618100941E10 /* smart_protocol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = smart_protocol.c; sourceTree = "<group>"; };
 		4CA5C0181982618100941E10 /* ssh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ssh.c; sourceTree = "<group>"; };
 		4CA5C0191982618100941E10 /* winhttp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = winhttp.c; sourceTree = "<group>"; };
-		4CA5C01B1982618100941E10 /* map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = map.c; sourceTree = "<group>"; };
 		4CA5C01C1982618100941E10 /* posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = posix.h; sourceTree = "<group>"; };
 		4CA5C01D1982618100941E10 /* realpath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = realpath.c; sourceTree = "<group>"; };
 		4CA5C01E1982618100941E10 /* realpath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = realpath.c; path = libgit2/src/unix/realpath.c; sourceTree = SOURCE_ROOT; };
@@ -468,16 +491,12 @@
 		52BEC740147D89C400C35467 /* thread-utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "thread-utils.c"; path = "libgit2/src/thread-utils.c"; sourceTree = SOURCE_ROOT; };
 		52BEC741147D89C400C35467 /* thread-utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "thread-utils.h"; path = "libgit2/src/thread-utils.h"; sourceTree = SOURCE_ROOT; };
 		52BEC742147D89C400C35467 /* transport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = transport.c; path = libgit2/src/transport.c; sourceTree = SOURCE_ROOT; };
-		52BEC745147D89C400C35467 /* git.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = git.c; sourceTree = "<group>"; };
-		52BEC746147D89C400C35467 /* http.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http.c; sourceTree = "<group>"; };
-		52BEC747147D89C400C35467 /* local.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = local.c; sourceTree = "<group>"; };
 		52BEC748147D89C400C35467 /* tree-cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "tree-cache.c"; path = "libgit2/src/tree-cache.c"; sourceTree = SOURCE_ROOT; };
 		52BEC749147D89C400C35467 /* tree-cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "tree-cache.h"; path = "libgit2/src/tree-cache.h"; sourceTree = SOURCE_ROOT; };
 		52BEC74A147D89C400C35467 /* tree.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tree.c; path = libgit2/src/tree.c; sourceTree = SOURCE_ROOT; };
 		52BEC74B147D89C400C35467 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tree.h; path = libgit2/src/tree.h; sourceTree = SOURCE_ROOT; };
 		52BEC74C147D89C400C35467 /* tsort.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tsort.c; path = libgit2/src/tsort.c; sourceTree = SOURCE_ROOT; };
 		52BEC74E147D89C400C35467 /* map.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = map.c; sourceTree = "<group>"; };
-		52BEC74F147D89C400C35467 /* posix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = posix.h; sourceTree = "<group>"; };
 		52BEC750147D89C400C35467 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = util.c; path = libgit2/src/util.c; sourceTree = SOURCE_ROOT; };
 		52BEC751147D89C400C35467 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = libgit2/src/util.h; sourceTree = SOURCE_ROOT; };
 		52BEC752147D89C400C35467 /* vector.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vector.c; path = libgit2/src/vector.c; sourceTree = SOURCE_ROOT; };
@@ -517,105 +536,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4CA5BF54198256FB00941E10 /* hash */ = {
+		4C022ED91A39E7EF00E514E2 /* build-scripts */ = {
 			isa = PBXGroup;
 			children = (
-				4CA5BF55198256FB00941E10 /* hash_generic.c */,
-				4CA5BF56198256FB00941E10 /* hash_generic.h */,
-				4CA5BF57198256FB00941E10 /* hash_openssl.h */,
-				4CA5BF58198256FB00941E10 /* hash_win32.c */,
-				4CA5BF59198256FB00941E10 /* hash_win32.h */,
 			);
-			name = hash;
-			path = libgit2/src/hash;
-			sourceTree = SOURCE_ROOT;
-		};
-		4CA5BFFD1982618100941E10 /* xdiff */ = {
-			isa = PBXGroup;
-			children = (
-				4CA5BFFE1982618100941E10 /* xdiff.h */,
-				4CA5BFFF1982618100941E10 /* xdiffi.c */,
-				4CA5C0001982618100941E10 /* xdiffi.h */,
-				4CA5C0011982618100941E10 /* xemit.c */,
-				4CA5C0021982618100941E10 /* xemit.h */,
-				4CA5C0031982618100941E10 /* xhistogram.c */,
-				4CA5C0041982618100941E10 /* xinclude.h */,
-				4CA5C0051982618100941E10 /* xmacros.h */,
-				4CA5C0061982618100941E10 /* xmerge.c */,
-				4CA5C0071982618100941E10 /* xpatience.c */,
-				4CA5C0081982618100941E10 /* xprepare.c */,
-				4CA5C0091982618100941E10 /* xprepare.h */,
-				4CA5C00A1982618100941E10 /* xtypes.h */,
-				4CA5C00B1982618100941E10 /* xutils.c */,
-				4CA5C00C1982618100941E10 /* xutils.h */,
-			);
-			name = xdiff;
-			path = libgit2/src/xdiff;
-			sourceTree = SOURCE_ROOT;
-		};
-		4CA5C00E1982618100941E10 /* transports */ = {
-			isa = PBXGroup;
-			children = (
-				4CA5C00F1982618100941E10 /* cred.c */,
-				4CA5C0101982618100941E10 /* cred_helpers.c */,
-				4CA5C0111982618100941E10 /* git.c */,
-				4CA5C0121982618100941E10 /* http.c */,
-				4CA5C0131982618100941E10 /* local.c */,
-				4CA5C0141982618100941E10 /* smart.c */,
-				4CA5C0151982618100941E10 /* smart.h */,
-				4CA5C0161982618100941E10 /* smart_pkt.c */,
-				4CA5C0171982618100941E10 /* smart_protocol.c */,
-				4CA5C0181982618100941E10 /* ssh.c */,
-				4CA5C0191982618100941E10 /* winhttp.c */,
-			);
-			name = transports;
-			path = libgit2/src/transports;
-			sourceTree = SOURCE_ROOT;
-		};
-		4CA5C01A1982618100941E10 /* unix */ = {
-			isa = PBXGroup;
-			children = (
-				4CA5C01B1982618100941E10 /* map.c */,
-				4CA5C01C1982618100941E10 /* posix.h */,
-				4CA5C01D1982618100941E10 /* realpath.c */,
-			);
-			name = unix;
-			path = libgit2/src/unix;
-			sourceTree = SOURCE_ROOT;
-		};
-		52BEC6C6147D88C900C35467 = {
-			isa = PBXGroup;
-			children = (
-				52BEC6E7147D88EB00C35467 /* git2-iOS */,
-				52BEC6D3147D88C900C35467 /* Frameworks */,
-				52BEC6D2147D88C900C35467 /* Products */,
-			);
+			name = "build-scripts";
 			sourceTree = "<group>";
 		};
-		52BEC6D2147D88C900C35467 /* Products */ = {
+		4C0AC4DE1A3076480097B708 /* libgit2 */ = {
 			isa = PBXGroup;
 			children = (
-				52BEC6E5147D88EB00C35467 /* libgit2-iOS.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		52BEC6D3147D88C900C35467 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				52BEC6D4147D88C900C35467 /* Foundation.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		52BEC6E7147D88EB00C35467 /* git2-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				4CA5BFFD1982618100941E10 /* xdiff */,
+				52BEC7D3147D8A0200C35467 /* zlib */,
+				4CA5BF54198256FB00941E10 /* hash */,
+				52BEC7CF147D8A0200C35467 /* http-parser */,
 				4CA5C00D1982618100941E10 /* zstream.h */,
-				52BEC744147D89C400C35467 /* transports */,
-				4CA5C00E1982618100941E10 /* transports */,
-				4CA5C01A1982618100941E10 /* unix */,
 				4CA5C01E1982618100941E10 /* realpath.c */,
 				4CA5BFFB19825F3A00941E10 /* zstream.c */,
 				4CA5BF24198256FB00941E10 /* array.h */,
@@ -666,7 +600,6 @@
 				4CA5BF51198256FB00941E10 /* fnmatch.c */,
 				4CA5BF52198256FB00941E10 /* fnmatch.h */,
 				4CA5BF53198256FB00941E10 /* graph.c */,
-				4CA5BF54198256FB00941E10 /* hash */,
 				4CA5BF5A198256FB00941E10 /* hashsig.c */,
 				4CA5BF5B198256FB00941E10 /* hashsig.h */,
 				4CA5BF5C198256FB00941E10 /* ident.c */,
@@ -722,8 +655,6 @@
 				4CA5BF8E198256FB00941E10 /* trace.h */,
 				4CA5BF8F198256FB00941E10 /* userdiff.h */,
 				4CA5BF22198256C800941E10 /* attr_file.c */,
-				52BEC7CF147D8A0200C35467 /* http-parser */,
-				52BEC7D3147D8A0200C35467 /* zlib */,
 				52BEC6F0147D89C400C35467 /* blob.c */,
 				52BEC6F1147D89C400C35467 /* blob.h */,
 				52BEC6F2147D89C400C35467 /* bswap.h */,
@@ -799,44 +730,132 @@
 				52BEC74A147D89C400C35467 /* tree.c */,
 				52BEC74B147D89C400C35467 /* tree.h */,
 				52BEC74C147D89C400C35467 /* tsort.c */,
-				52BEC74D147D89C400C35467 /* unix */,
+				4CA5C00E1982618100941E10 /* transports */,
+				4CA5BFFD1982618100941E10 /* xdiff */,
+				4CA5C01A1982618100941E10 /* unix */,
 				52BEC750147D89C400C35467 /* util.c */,
 				52BEC751147D89C400C35467 /* util.h */,
 				52BEC752147D89C400C35467 /* vector.c */,
 				52BEC753147D89C400C35467 /* vector.h */,
 				52BEC6E8147D88EB00C35467 /* Supporting Files */,
+				52BEC6E9147D88EB00C35467 /* git2-iOS-Prefix.pch */,
+				52BEC6D3147D88C900C35467 /* Frameworks */,
+				52BEC6D2147D88C900C35467 /* Products */,
 			);
+			name = libgit2;
+			path = "git2-iOS";
+			sourceTree = "<group>";
+		};
+		4CA5BF54198256FB00941E10 /* hash */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5BF55198256FB00941E10 /* hash_generic.c */,
+				4CA5BF56198256FB00941E10 /* hash_generic.h */,
+				4CA5BF57198256FB00941E10 /* hash_openssl.h */,
+				4CA5BF58198256FB00941E10 /* hash_win32.c */,
+				4CA5BF59198256FB00941E10 /* hash_win32.h */,
+			);
+			name = hash;
+			path = libgit2/src/hash;
+			sourceTree = SOURCE_ROOT;
+		};
+		4CA5BFFD1982618100941E10 /* xdiff */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5BFFE1982618100941E10 /* xdiff.h */,
+				4CA5BFFF1982618100941E10 /* xdiffi.c */,
+				4CA5C0001982618100941E10 /* xdiffi.h */,
+				4CA5C0011982618100941E10 /* xemit.c */,
+				4CA5C0021982618100941E10 /* xemit.h */,
+				4CA5C0031982618100941E10 /* xhistogram.c */,
+				4CA5C0041982618100941E10 /* xinclude.h */,
+				4CA5C0051982618100941E10 /* xmacros.h */,
+				4CA5C0061982618100941E10 /* xmerge.c */,
+				4CA5C0071982618100941E10 /* xpatience.c */,
+				4CA5C0081982618100941E10 /* xprepare.c */,
+				4CA5C0091982618100941E10 /* xprepare.h */,
+				4CA5C00A1982618100941E10 /* xtypes.h */,
+				4CA5C00B1982618100941E10 /* xutils.c */,
+				4CA5C00C1982618100941E10 /* xutils.h */,
+			);
+			name = xdiff;
+			path = libgit2/src/xdiff;
+			sourceTree = SOURCE_ROOT;
+		};
+		4CA5C00E1982618100941E10 /* transports */ = {
+			isa = PBXGroup;
+			children = (
+				4CA5C00F1982618100941E10 /* cred.c */,
+				4CA5C0101982618100941E10 /* cred_helpers.c */,
+				4CA5C0111982618100941E10 /* git.c */,
+				4CA5C0121982618100941E10 /* http.c */,
+				4CA5C0131982618100941E10 /* local.c */,
+				4CA5C0141982618100941E10 /* smart.c */,
+				4CA5C0151982618100941E10 /* smart.h */,
+				4CA5C0161982618100941E10 /* smart_pkt.c */,
+				4CA5C0171982618100941E10 /* smart_protocol.c */,
+				4CA5C0181982618100941E10 /* ssh.c */,
+				4CA5C0191982618100941E10 /* winhttp.c */,
+			);
+			name = transports;
+			path = libgit2/src/transports;
+			sourceTree = SOURCE_ROOT;
+		};
+		4CA5C01A1982618100941E10 /* unix */ = {
+			isa = PBXGroup;
+			children = (
+				52BEC74E147D89C400C35467 /* map.c */,
+				4CA5C01C1982618100941E10 /* posix.h */,
+				4CA5C01D1982618100941E10 /* realpath.c */,
+			);
+			name = unix;
+			path = libgit2/src/unix;
+			sourceTree = SOURCE_ROOT;
+		};
+		52BEC6C6147D88C900C35467 = {
+			isa = PBXGroup;
+			children = (
+				4C022EDA1A39E81000E514E2 /* libgit2-iOS.xcconfig */,
+				4C022ED91A39E7EF00E514E2 /* build-scripts */,
+				4C0AC4DE1A3076480097B708 /* libgit2 */,
+				52BEC6E7147D88EB00C35467 /* gitsslctx */,
+			);
+			sourceTree = "<group>";
+		};
+		52BEC6D2147D88C900C35467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52BEC6E5147D88EB00C35467 /* libgit2-iOS.a */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		52BEC6D3147D88C900C35467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52BEC6D4147D88C900C35467 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		52BEC6E7147D88EB00C35467 /* gitsslctx */ = {
+			isa = PBXGroup;
+			children = (
+				4C0AC4DC1A306D4C0097B708 /* gitsslctx.h */,
+				4C0AC4DA1A306D260097B708 /* gitsslctx.c */,
+			);
+			name = gitsslctx;
 			path = "git2-iOS";
 			sourceTree = "<group>";
 		};
 		52BEC6E8147D88EB00C35467 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				52BEC6E9147D88EB00C35467 /* git2-iOS-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
-		};
-		52BEC744147D89C400C35467 /* transports */ = {
-			isa = PBXGroup;
-			children = (
-				52BEC745147D89C400C35467 /* git.c */,
-				52BEC746147D89C400C35467 /* http.c */,
-				52BEC747147D89C400C35467 /* local.c */,
-			);
-			name = transports;
-			path = libgit2/src/transports;
-			sourceTree = SOURCE_ROOT;
-		};
-		52BEC74D147D89C400C35467 /* unix */ = {
-			isa = PBXGroup;
-			children = (
-				52BEC74E147D89C400C35467 /* map.c */,
-				52BEC74F147D89C400C35467 /* posix.h */,
-			);
-			name = unix;
-			path = libgit2/src/unix;
-			sourceTree = SOURCE_ROOT;
 		};
 		52BEC7CF147D8A0200C35467 /* http-parser */ = {
 			isa = PBXGroup;
@@ -973,7 +992,6 @@
 				4CA5BFDE198256FB00941E10 /* pathspec.h in Headers */,
 				4CA5C02E1982618100941E10 /* zstream.h in Headers */,
 				52BEC7BB147D89C400C35467 /* tree.h in Headers */,
-				52BEC7BE147D89C400C35467 /* posix.h in Headers */,
 				52BEC7C0147D89C400C35467 /* util.h in Headers */,
 				52BEC7C2147D89C400C35467 /* vector.h in Headers */,
 				4CA5BFC2198256FB00941E10 /* hash_openssl.h in Headers */,
@@ -1025,6 +1043,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
+				TargetAttributes = {
+					4C51D56B1A36BCBA00D5C3EC = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
 			};
 			buildConfigurationList = 52BEC6CB147D88C900C35467 /* Build configuration list for PBXProject "libgit2-iOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1039,11 +1062,25 @@
 			projectRoot = "";
 			targets = (
 				52BEC6E4147D88EB00C35467 /* git2-iOS */,
+				4C51D56B1A36BCBA00D5C3EC /* git2-iOS-univ */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4C51D5711A36BD3600D5C3EC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "file=${PROJECT_NAME}.build-univ.sh;\n\n\nif [ -x \"$SRCROOT/$file\" ]; then\nexec ${SRCROOT}/$file;\nelif [ -x \"$SRCROOT/lib$file\" ]; then\nexec ${SRCROOT}/lib$file;\nelif [ -x \"$SRCROOT/${file#lib}\" ]; then\nexec \"${SRCROOT}/${file#lib}\" ;\nelse\necho \"Cannot find a suitable *.build-univ.sh for ${PROJECT_NAME}.\"\nexit 1;\nfi\n\n";
+		};
 		52BEC7FD147D8A6D00C35467 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1055,7 +1092,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Version 2.0 (updated for Xcode 4, with some fixes)\n# Changes:\n#    - Works with xcode 4, even when running xcode 3 projects (Workarounds for apple bugs)\n#    - Faster / better: only runs lipo once, instead of once per recursion\n#    - Added some debugging statemetns that can be switched on/off by changing the DEBUG_THIS_SCRIPT variable to \"true\"\n#    - Fixed some typos\n# \n# Purpose:\n#   Create a static library for iPhone from within XCode\n#   Because Apple staff DELIBERATELY broke Xcode to make this impossible from the GUI (Xcode 3.2.3 specifically states this in the Release notes!)\n#   ...no, I don't understand why they did this!\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n# More info: see this Stack Overflow question: http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\"\nxcodebuild -configuration \"${CONFIGURATION}\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SRCROOT}/build/\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nlipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\n# * needs to be outside the double quotes?\ncp \"${CURRENTCONFIG_DEVICE_DIR}/usr/local/include/\"* \"${CREATING_UNIVERSAL_DIR}/usr/local/include\"\nfi\nfi";
+			shellScript = "# Version 2.0 (updated for Xcode 4, with some fixes)\n# Changes:\n#    - Works with xcode 4, even when running xcode 3 projects (Workarounds for apple bugs)\n#    - Faster / better: only runs lipo once, instead of once per recursion\n#    - Added some debugging statemetns that can be switched on/off by changing the DEBUG_THIS_SCRIPT variable to \"true\"\n#    - Fixed some typos\n# \n# Purpose:\n#   Create a static library for iPhone from within XCode\n#   Because Apple staff DELIBERATELY broke Xcode to make this impossible from the GUI (Xcode 3.2.3 specifically states this in the Release notes!)\n#   ...no, I don't understand why they did this!\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n# More info: see this Stack Overflow question: http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"true\"\n\nexit 0;\n\n\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\"\nxcodebuild -configuration \"${CONFIGURATION}\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SRCROOT}/build/\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nlipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\n\n                                   \n# * needs to be outside the double quotes?\n\n\n\nmkdir -p \"${CREATING_UNIVERSAL_DIR}/include\"\ncp -R \"${SRCROOT}\"/libgit2/include/* \"${CREATING_UNIVERSAL_DIR}\"/include\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1064,6 +1101,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C51D56A1A36B7BC00D5C3EC /* gitsslctx.c in Sources */,
 				52BEC762147D89C400C35467 /* blob.c in Sources */,
 				4CA5BFA8198256FB00941E10 /* crlf.c in Sources */,
 				4CA5BFAA198256FB00941E10 /* delta.c in Sources */,
@@ -1157,12 +1195,8 @@
 				52BEC7B3147D89C400C35467 /* transport.c in Sources */,
 				4CA5BFFC19825F3A00941E10 /* zstream.c in Sources */,
 				4CA5BFD1198256FB00941E10 /* message.c in Sources */,
-				4CA5C03A1982618100941E10 /* map.c in Sources */,
-				52BEC7B5147D89C400C35467 /* git.c in Sources */,
 				4CA5C0311982618100941E10 /* git.c in Sources */,
 				4CA5BFF1198256FB00941E10 /* strmap.c in Sources */,
-				52BEC7B6147D89C400C35467 /* http.c in Sources */,
-				52BEC7B7147D89C400C35467 /* local.c in Sources */,
 				4CA5C0221982618100941E10 /* xemit.c in Sources */,
 				52BEC7B8147D89C400C35467 /* tree-cache.c in Sources */,
 				4CA5BFEF198256FB00941E10 /* stash.c in Sources */,
@@ -1201,9 +1235,32 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4C51D5701A36BD1000D5C3EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52BEC6E4147D88EB00C35467 /* git2-iOS */;
+			targetProxy = 4C51D56F1A36BD1000D5C3EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4C51D56D1A36BCBA00D5C3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4C51D56E1A36BCBA00D5C3EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		52BEC6DC147D88C900C35467 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C022EDA1A39E81000E514E2 /* libgit2-iOS.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1237,6 +1294,7 @@
 		};
 		52BEC6DD147D88C900C35467 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C022EDA1A39E81000E514E2 /* libgit2-iOS.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1264,32 +1322,61 @@
 		52BEC6EE147D88EB00C35467 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				DSTROOT = /tmp/git2_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "git2-iOS/git2-iOS-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/libgit2/include";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "GIT_SSL=1";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libgit2/include",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Debug;
 		};
 		52BEC6EF147D88EB00C35467 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					armv7s,
+				);
 				DSTROOT = /tmp/git2_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "git2-iOS/git2-iOS-Prefix.pch";
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/libgit2/include";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/libgit2/include",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4C51D56C1A36BCBA00D5C3EC /* Build configuration list for PBXAggregateTarget "git2-iOS-univ" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C51D56D1A36BCBA00D5C3EC /* Debug */,
+				4C51D56E1A36BCBA00D5C3EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		52BEC6CB147D88C900C35467 /* Build configuration list for PBXProject "libgit2-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
