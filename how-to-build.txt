@@ -1,0 +1,13 @@
+HOW TO BUILD libgit2-iOS
+------------------------
+nokiddin 2014/12/12
+
+make fetch
+
+# optionally, set the INCLUDE or CPATH search paths. This step is 
+# required if openssl is not present on any system search paths like /usr/include   
+export INCLUDE=... 
+
+make
+...or:
+ CONFIGURATION=Debug make  # to restrict only to Debug build.
