@@ -3,7 +3,6 @@
 #define _gitsslctx_h
 
 
-#include "global.h"
 
 
 #ifdef GIT_SSL
