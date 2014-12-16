@@ -4,9 +4,14 @@ nokiddin 2014/12/12
 
 make fetch
 
-# optionally, set the INCLUDE or CPATH search paths. This step is 
-# required if openssl is not present on any system search paths like /usr/include   
-export INCLUDE=... 
+# Set the INCLUDE or CPATH search paths. As we are cross-compiling, we need 
+# architecture specific header files. The /usr/include is generally valid only for 
+# the current OS architecture and not for the target architecture. In fact, 
+# having /usr/include in the INCLUDE path may actually break the build or worse still 
+# silently generate an incorrect image. XCode offers platform specific images for many 
+# system header files via its SDKs. The $(inherited) already takes care of it. 
+# In particular, openssl is not packaged in this SDK and that's why the INCLUDE 
+# variable should be used in those limited cases. 
 
 make
 ...or:

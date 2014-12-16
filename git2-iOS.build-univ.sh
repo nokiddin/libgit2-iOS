@@ -58,6 +58,10 @@ mkdir -p "$myoutdir/include";
 if [ -d "$SRCROOT"/pub ] ; then 
 cp -R "${SRCROOT}"/pub/* "$myoutdir/include";
 fi
+if [ -f "$SRCROOT"/pubincdirs.list ]; then 
+rsync -av --files-from="${SRCROOT}"/pubincdirs.list ${SRCROOT} "$myoutdir/include";
+fi
+
 
 echo "OK    | ${PROJECT_NAME} | build-univ" 1>&2 ; 
 

@@ -420,7 +420,6 @@
 		4CA5C01E1982618100941E10 /* realpath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = realpath.c; path = libgit2/src/unix/realpath.c; sourceTree = SOURCE_ROOT; };
 		52BEC6D4147D88C900C35467 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		52BEC6E5147D88EB00C35467 /* libgit2-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libgit2-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		52BEC6E9147D88EB00C35467 /* git2-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "git2-iOS-Prefix.pch"; sourceTree = "<group>"; };
 		52BEC6F0147D89C400C35467 /* blob.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = blob.c; path = libgit2/src/blob.c; sourceTree = SOURCE_ROOT; };
 		52BEC6F1147D89C400C35467 /* blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blob.h; path = libgit2/src/blob.h; sourceTree = SOURCE_ROOT; };
 		52BEC6F2147D89C400C35467 /* bswap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bswap.h; path = libgit2/src/bswap.h; sourceTree = SOURCE_ROOT; };
@@ -738,7 +737,6 @@
 				52BEC752147D89C400C35467 /* vector.c */,
 				52BEC753147D89C400C35467 /* vector.h */,
 				52BEC6E8147D88EB00C35467 /* Supporting Files */,
-				52BEC6E9147D88EB00C35467 /* git2-iOS-Prefix.pch */,
 				52BEC6D3147D88C900C35467 /* Frameworks */,
 				52BEC6D2147D88C900C35467 /* Products */,
 			);
@@ -847,7 +845,7 @@
 				4C0AC4DA1A306D260097B708 /* gitsslctx.c */,
 			);
 			name = gitsslctx;
-			path = "git2-iOS";
+			path = gitssl;
 			sourceTree = "<group>";
 		};
 		52BEC6E8147D88EB00C35467 /* Supporting Files */ = {
@@ -1288,6 +1286,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1314,6 +1313,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1328,7 +1328,7 @@
 				);
 				DSTROOT = /tmp/git2_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "git2-iOS/git2-iOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "GIT_SSL=1";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/libgit2/include",
@@ -1352,7 +1352,7 @@
 				);
 				DSTROOT = /tmp/git2_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "git2-iOS/git2-iOS-Prefix.pch";
+				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/libgit2/include",
 					"$(inherited)",
