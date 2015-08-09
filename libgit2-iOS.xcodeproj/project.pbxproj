@@ -78,7 +78,6 @@
 		4CA5BFC3198256FB00941E10 /* hash_win32.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5BF58198256FB00941E10 /* hash_win32.c */; };
 		4CA5BFC4198256FB00941E10 /* hash_win32.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA5BF59198256FB00941E10 /* hash_win32.h */; };
 		4CA5BFC5198256FB00941E10 /* hashsig.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5BF5A198256FB00941E10 /* hashsig.c */; };
-		4CA5BFC6198256FB00941E10 /* hashsig.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA5BF5B198256FB00941E10 /* hashsig.h */; };
 		4CA5BFC7198256FB00941E10 /* ident.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5BF5C198256FB00941E10 /* ident.c */; };
 		4CA5BFC8198256FB00941E10 /* ignore.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CA5BF5D198256FB00941E10 /* ignore.c */; };
 		4CA5BFC9198256FB00941E10 /* ignore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CA5BF5E198256FB00941E10 /* ignore.h */; };
@@ -165,7 +164,6 @@
 		52BEC6E6147D88EB00C35467 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52BEC6D4147D88C900C35467 /* Foundation.framework */; };
 		52BEC762147D89C400C35467 /* blob.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC6F0147D89C400C35467 /* blob.c */; };
 		52BEC763147D89C400C35467 /* blob.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC6F1147D89C400C35467 /* blob.h */; };
-		52BEC764147D89C400C35467 /* bswap.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC6F2147D89C400C35467 /* bswap.h */; };
 		52BEC765147D89C400C35467 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC6F3147D89C400C35467 /* buffer.c */; };
 		52BEC766147D89C400C35467 /* buffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC6F4147D89C400C35467 /* buffer.h */; };
 		52BEC767147D89C400C35467 /* cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC6F5147D89C400C35467 /* cache.c */; };
@@ -263,6 +261,29 @@
 		52BEC7F7147D8A0200C35467 /* zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC7E3147D8A0200C35467 /* zlib.h */; };
 		52BEC7F8147D8A0200C35467 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC7E4147D8A0200C35467 /* zutil.c */; };
 		52BEC7F9147D8A0200C35467 /* zutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC7E5147D8A0200C35467 /* zutil.h */; };
+		D8B5D2D91B74CB670085040C /* auth_negotiate.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2D41B74CB670085040C /* auth_negotiate.c */; };
+		D8B5D2DA1B74CB670085040C /* auth_negotiate.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2D51B74CB670085040C /* auth_negotiate.h */; };
+		D8B5D2DB1B74CB670085040C /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2D61B74CB670085040C /* auth.c */; };
+		D8B5D2DC1B74CB670085040C /* auth.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2D71B74CB670085040C /* auth.h */; };
+		D8B5D2DD1B74CB670085040C /* cred.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2D81B74CB670085040C /* cred.h */; };
+		D8B5D2E11B74CBE30085040C /* annotated_commit.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2DE1B74CBE30085040C /* annotated_commit.c */; };
+		D8B5D2E21B74CBE30085040C /* annotated_commit.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2DF1B74CBE30085040C /* annotated_commit.h */; };
+		D8B5D2E31B74CBE30085040C /* describe.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2E01B74CBE30085040C /* describe.c */; };
+		D8B5D2EA1B74CBF80085040C /* integer.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2E41B74CBF80085040C /* integer.h */; };
+		D8B5D2EB1B74CBF80085040C /* oidarray.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2E51B74CBF80085040C /* oidarray.c */; };
+		D8B5D2EC1B74CBF80085040C /* oidarray.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2E61B74CBF80085040C /* oidarray.h */; };
+		D8B5D2ED1B74CBF80085040C /* openssl_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2E71B74CBF80085040C /* openssl_stream.c */; };
+		D8B5D2EE1B74CBF80085040C /* openssl_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2E81B74CBF80085040C /* openssl_stream.h */; };
+		D8B5D2EF1B74CBF80085040C /* rebase.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2E91B74CBF80085040C /* rebase.c */; };
+		D8B5D2F81B74CC460085040C /* socket_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2F01B74CC460085040C /* socket_stream.c */; };
+		D8B5D2F91B74CC460085040C /* socket_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2F11B74CC460085040C /* socket_stream.h */; };
+		D8B5D2FA1B74CC460085040C /* stransport_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2F21B74CC460085040C /* stransport_stream.c */; };
+		D8B5D2FB1B74CC460085040C /* stransport_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2F31B74CC460085040C /* stransport_stream.h */; };
+		D8B5D2FC1B74CC460085040C /* stream.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2F41B74CC460085040C /* stream.h */; };
+		D8B5D2FD1B74CC460085040C /* tls_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2F51B74CC460085040C /* tls_stream.c */; };
+		D8B5D2FE1B74CC460085040C /* tls_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2F61B74CC460085040C /* tls_stream.h */; };
+		D8B5D2FF1B74CC460085040C /* transaction.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2F71B74CC460085040C /* transaction.c */; };
+		D8B5D3011B74CC6D0085040C /* hash_common_crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D3001B74CC6D0085040C /* hash_common_crypto.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -334,7 +355,6 @@
 		4CA5BF58198256FB00941E10 /* hash_win32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash_win32.c; sourceTree = "<group>"; };
 		4CA5BF59198256FB00941E10 /* hash_win32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_win32.h; sourceTree = "<group>"; };
 		4CA5BF5A198256FB00941E10 /* hashsig.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hashsig.c; path = libgit2/src/hashsig.c; sourceTree = SOURCE_ROOT; };
-		4CA5BF5B198256FB00941E10 /* hashsig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hashsig.h; path = libgit2/src/hashsig.h; sourceTree = SOURCE_ROOT; };
 		4CA5BF5C198256FB00941E10 /* ident.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ident.c; path = libgit2/src/ident.c; sourceTree = SOURCE_ROOT; };
 		4CA5BF5D198256FB00941E10 /* ignore.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ignore.c; path = libgit2/src/ignore.c; sourceTree = SOURCE_ROOT; };
 		4CA5BF5E198256FB00941E10 /* ignore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ignore.h; path = libgit2/src/ignore.h; sourceTree = SOURCE_ROOT; };
@@ -422,7 +442,6 @@
 		52BEC6E5147D88EB00C35467 /* libgit2-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libgit2-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52BEC6F0147D89C400C35467 /* blob.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = blob.c; path = libgit2/src/blob.c; sourceTree = SOURCE_ROOT; };
 		52BEC6F1147D89C400C35467 /* blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blob.h; path = libgit2/src/blob.h; sourceTree = SOURCE_ROOT; };
-		52BEC6F2147D89C400C35467 /* bswap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bswap.h; path = libgit2/src/bswap.h; sourceTree = SOURCE_ROOT; };
 		52BEC6F3147D89C400C35467 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = libgit2/src/buffer.c; sourceTree = SOURCE_ROOT; };
 		52BEC6F4147D89C400C35467 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = libgit2/src/buffer.h; sourceTree = SOURCE_ROOT; };
 		52BEC6F5147D89C400C35467 /* cache.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cache.c; path = libgit2/src/cache.c; sourceTree = SOURCE_ROOT; };
@@ -521,6 +540,29 @@
 		52BEC7E3147D8A0200C35467 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
 		52BEC7E4147D8A0200C35467 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
 		52BEC7E5147D8A0200C35467 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		D8B5D2D41B74CB670085040C /* auth_negotiate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_negotiate.c; sourceTree = "<group>"; };
+		D8B5D2D51B74CB670085040C /* auth_negotiate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_negotiate.h; sourceTree = "<group>"; };
+		D8B5D2D61B74CB670085040C /* auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth.c; sourceTree = "<group>"; };
+		D8B5D2D71B74CB670085040C /* auth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth.h; sourceTree = "<group>"; };
+		D8B5D2D81B74CB670085040C /* cred.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cred.h; sourceTree = "<group>"; };
+		D8B5D2DE1B74CBE30085040C /* annotated_commit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = annotated_commit.c; path = libgit2/src/annotated_commit.c; sourceTree = SOURCE_ROOT; };
+		D8B5D2DF1B74CBE30085040C /* annotated_commit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = annotated_commit.h; path = libgit2/src/annotated_commit.h; sourceTree = SOURCE_ROOT; };
+		D8B5D2E01B74CBE30085040C /* describe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = describe.c; path = libgit2/src/describe.c; sourceTree = SOURCE_ROOT; };
+		D8B5D2E41B74CBF80085040C /* integer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = integer.h; path = libgit2/src/integer.h; sourceTree = SOURCE_ROOT; };
+		D8B5D2E51B74CBF80085040C /* oidarray.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = oidarray.c; path = libgit2/src/oidarray.c; sourceTree = SOURCE_ROOT; };
+		D8B5D2E61B74CBF80085040C /* oidarray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = oidarray.h; path = libgit2/src/oidarray.h; sourceTree = SOURCE_ROOT; };
+		D8B5D2E71B74CBF80085040C /* openssl_stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = openssl_stream.c; path = libgit2/src/openssl_stream.c; sourceTree = SOURCE_ROOT; };
+		D8B5D2E81B74CBF80085040C /* openssl_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = openssl_stream.h; path = libgit2/src/openssl_stream.h; sourceTree = SOURCE_ROOT; };
+		D8B5D2E91B74CBF80085040C /* rebase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rebase.c; path = libgit2/src/rebase.c; sourceTree = SOURCE_ROOT; };
+		D8B5D2F01B74CC460085040C /* socket_stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = socket_stream.c; path = libgit2/src/socket_stream.c; sourceTree = SOURCE_ROOT; };
+		D8B5D2F11B74CC460085040C /* socket_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = socket_stream.h; path = libgit2/src/socket_stream.h; sourceTree = SOURCE_ROOT; };
+		D8B5D2F21B74CC460085040C /* stransport_stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stransport_stream.c; path = libgit2/src/stransport_stream.c; sourceTree = SOURCE_ROOT; };
+		D8B5D2F31B74CC460085040C /* stransport_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stransport_stream.h; path = libgit2/src/stransport_stream.h; sourceTree = SOURCE_ROOT; };
+		D8B5D2F41B74CC460085040C /* stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stream.h; path = libgit2/src/stream.h; sourceTree = SOURCE_ROOT; };
+		D8B5D2F51B74CC460085040C /* tls_stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tls_stream.c; path = libgit2/src/tls_stream.c; sourceTree = SOURCE_ROOT; };
+		D8B5D2F61B74CC460085040C /* tls_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tls_stream.h; path = libgit2/src/tls_stream.h; sourceTree = SOURCE_ROOT; };
+		D8B5D2F71B74CC460085040C /* transaction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = transaction.c; path = libgit2/src/transaction.c; sourceTree = SOURCE_ROOT; };
+		D8B5D3001B74CC6D0085040C /* hash_common_crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash_common_crypto.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -549,6 +591,15 @@
 				4CA5BF54198256FB00941E10 /* hash */,
 				52BEC7CF147D8A0200C35467 /* http-parser */,
 				4CA5C00D1982618100941E10 /* zstream.h */,
+				D8B5D2E41B74CBF80085040C /* integer.h */,
+				D8B5D2E51B74CBF80085040C /* oidarray.c */,
+				D8B5D2E61B74CBF80085040C /* oidarray.h */,
+				D8B5D2E71B74CBF80085040C /* openssl_stream.c */,
+				D8B5D2E81B74CBF80085040C /* openssl_stream.h */,
+				D8B5D2E91B74CBF80085040C /* rebase.c */,
+				D8B5D2DE1B74CBE30085040C /* annotated_commit.c */,
+				D8B5D2DF1B74CBE30085040C /* annotated_commit.h */,
+				D8B5D2E01B74CBE30085040C /* describe.c */,
 				4CA5C01E1982618100941E10 /* realpath.c */,
 				4CA5BFFB19825F3A00941E10 /* zstream.c */,
 				4CA5BF24198256FB00941E10 /* array.h */,
@@ -600,7 +651,6 @@
 				4CA5BF52198256FB00941E10 /* fnmatch.h */,
 				4CA5BF53198256FB00941E10 /* graph.c */,
 				4CA5BF5A198256FB00941E10 /* hashsig.c */,
-				4CA5BF5B198256FB00941E10 /* hashsig.h */,
 				4CA5BF5C198256FB00941E10 /* ident.c */,
 				4CA5BF5D198256FB00941E10 /* ignore.c */,
 				4CA5BF5E198256FB00941E10 /* ignore.h */,
@@ -656,7 +706,6 @@
 				4CA5BF22198256C800941E10 /* attr_file.c */,
 				52BEC6F0147D89C400C35467 /* blob.c */,
 				52BEC6F1147D89C400C35467 /* blob.h */,
-				52BEC6F2147D89C400C35467 /* bswap.h */,
 				52BEC6F3147D89C400C35467 /* buffer.c */,
 				52BEC6F4147D89C400C35467 /* buffer.h */,
 				52BEC6F5147D89C400C35467 /* cache.c */,
@@ -685,6 +734,14 @@
 				52BEC70F147D89C400C35467 /* index.h */,
 				52BEC710147D89C400C35467 /* indexer.c */,
 				52BEC711147D89C400C35467 /* map.h */,
+				D8B5D2F01B74CC460085040C /* socket_stream.c */,
+				D8B5D2F11B74CC460085040C /* socket_stream.h */,
+				D8B5D2F21B74CC460085040C /* stransport_stream.c */,
+				D8B5D2F31B74CC460085040C /* stransport_stream.h */,
+				D8B5D2F41B74CC460085040C /* stream.h */,
+				D8B5D2F51B74CC460085040C /* tls_stream.c */,
+				D8B5D2F61B74CC460085040C /* tls_stream.h */,
+				D8B5D2F71B74CC460085040C /* transaction.c */,
 				52BEC712147D89C400C35467 /* mwindow.c */,
 				52BEC713147D89C400C35467 /* mwindow.h */,
 				52BEC714147D89C400C35467 /* netops.c */,
@@ -747,6 +804,7 @@
 		4CA5BF54198256FB00941E10 /* hash */ = {
 			isa = PBXGroup;
 			children = (
+				D8B5D3001B74CC6D0085040C /* hash_common_crypto.h */,
 				4CA5BF55198256FB00941E10 /* hash_generic.c */,
 				4CA5BF56198256FB00941E10 /* hash_generic.h */,
 				4CA5BF57198256FB00941E10 /* hash_openssl.h */,
@@ -783,6 +841,11 @@
 		4CA5C00E1982618100941E10 /* transports */ = {
 			isa = PBXGroup;
 			children = (
+				D8B5D2D41B74CB670085040C /* auth_negotiate.c */,
+				D8B5D2D51B74CB670085040C /* auth_negotiate.h */,
+				D8B5D2D61B74CB670085040C /* auth.c */,
+				D8B5D2D71B74CB670085040C /* auth.h */,
+				D8B5D2D81B74CB670085040C /* cred.h */,
 				4CA5C00F1982618100941E10 /* cred.c */,
 				4CA5C0101982618100941E10 /* cred_helpers.c */,
 				4CA5C0111982618100941E10 /* git.c */,
@@ -906,9 +969,7 @@
 				4CA5BFD8198256FB00941E10 /* offmap.h in Headers */,
 				52BEC763147D89C400C35467 /* blob.h in Headers */,
 				4CA5BF91198256FB00941E10 /* attr_file.h in Headers */,
-				4CA5BFC6198256FB00941E10 /* hashsig.h in Headers */,
 				4CA5BFBE198256FB00941E10 /* fnmatch.h in Headers */,
-				52BEC764147D89C400C35467 /* bswap.h in Headers */,
 				52BEC766147D89C400C35467 /* buffer.h in Headers */,
 				52BEC768147D89C400C35467 /* cache.h in Headers */,
 				4CA5C0251982618100941E10 /* xinclude.h in Headers */,
@@ -917,7 +978,9 @@
 				4CA5C0351982618100941E10 /* smart.h in Headers */,
 				4CA5BF93198256FB00941E10 /* attr.h in Headers */,
 				4CA5C0261982618100941E10 /* xmacros.h in Headers */,
+				D8B5D2FE1B74CC460085040C /* tls_stream.h in Headers */,
 				4CA5BFD4198256FB00941E10 /* notes.h in Headers */,
+				D8B5D3011B74CC6D0085040C /* hash_common_crypto.h in Headers */,
 				4CA5BFD9198256FB00941E10 /* oid.h in Headers */,
 				4CA5C02B1982618100941E10 /* xtypes.h in Headers */,
 				4CA5BFF5198256FB00941E10 /* submodule.h in Headers */,
@@ -926,6 +989,7 @@
 				52BEC76C147D89C400C35467 /* common.h in Headers */,
 				4CA5BFB6198256FB00941E10 /* diff_xdiff.h in Headers */,
 				4CA5BFEB198256FB00941E10 /* revwalk.h in Headers */,
+				D8B5D2EE1B74CBF80085040C /* openssl_stream.h in Headers */,
 				4CA5BFF2198256FB00941E10 /* strmap.h in Headers */,
 				4CA5BFE2198256FB00941E10 /* push.h in Headers */,
 				4CA5BFA0198256FB00941E10 /* checkout.h in Headers */,
@@ -941,6 +1005,7 @@
 				52BEC779147D89C400C35467 /* fileops.h in Headers */,
 				4CA5BFAD198256FB00941E10 /* diff_driver.h in Headers */,
 				52BEC77B147D89C400C35467 /* global.h in Headers */,
+				D8B5D2EC1B74CBF80085040C /* oidarray.h in Headers */,
 				52BEC77D147D89C400C35467 /* hash.h in Headers */,
 				52BEC781147D89C400C35467 /* index.h in Headers */,
 				4CA5BFA5198256FB00941E10 /* commit_list.h in Headers */,
@@ -954,6 +1019,7 @@
 				4CA5BFE7198256FB00941E10 /* repo_template.h in Headers */,
 				52BEC785147D89C400C35467 /* mwindow.h in Headers */,
 				52BEC787147D89C400C35467 /* netops.h in Headers */,
+				D8B5D2FC1B74CC460085040C /* stream.h in Headers */,
 				4CA5C02A1982618100941E10 /* xprepare.h in Headers */,
 				4CA5BFCC198256FB00941E10 /* khash.h in Headers */,
 				52BEC78C147D89C400C35467 /* odb.h in Headers */,
@@ -963,6 +1029,7 @@
 				4CA5BFC9198256FB00941E10 /* ignore.h in Headers */,
 				4CA5BFFA198256FB00941E10 /* userdiff.h in Headers */,
 				4CA5BF90198256FB00941E10 /* array.h in Headers */,
+				D8B5D2FB1B74CC460085040C /* stransport_stream.h in Headers */,
 				4CA5C03B1982618100941E10 /* posix.h in Headers */,
 				52BEC791147D89C400C35467 /* path.h in Headers */,
 				52BEC795147D89C400C35467 /* posix.h in Headers */,
@@ -974,6 +1041,7 @@
 				4CA5BFF9198256FB00941E10 /* trace.h in Headers */,
 				52BEC7A2147D89C400C35467 /* refspec.h in Headers */,
 				4CA5BFBA198256FB00941E10 /* fetchhead.h in Headers */,
+				D8B5D2E21B74CBE30085040C /* annotated_commit.h in Headers */,
 				4CA5BFEE198256FB00941E10 /* sortedcache.h in Headers */,
 				4CA5BF98198256FB00941E10 /* blame_git.h in Headers */,
 				52BEC7A4147D89C400C35467 /* remote.h in Headers */,
@@ -984,11 +1052,13 @@
 				4CA5BFE4198256FB00941E10 /* refdb_fs.h in Headers */,
 				52BEC7B0147D89C400C35467 /* tag.h in Headers */,
 				52BEC7B2147D89C400C35467 /* thread-utils.h in Headers */,
+				D8B5D2F91B74CC460085040C /* socket_stream.h in Headers */,
 				4CA5BFA7198256FB00941E10 /* config_file.h in Headers */,
 				4CA5BFC1198256FB00941E10 /* hash_generic.h in Headers */,
 				52BEC7B9147D89C400C35467 /* tree-cache.h in Headers */,
 				4CA5BFDE198256FB00941E10 /* pathspec.h in Headers */,
 				4CA5C02E1982618100941E10 /* zstream.h in Headers */,
+				D8B5D2EA1B74CBF80085040C /* integer.h in Headers */,
 				52BEC7BB147D89C400C35467 /* tree.h in Headers */,
 				52BEC7C0147D89C400C35467 /* util.h in Headers */,
 				52BEC7C2147D89C400C35467 /* vector.h in Headers */,
@@ -998,13 +1068,16 @@
 				52BEC7EC147D8A0200C35467 /* deflate.h in Headers */,
 				4CA5BFF3198256FB00941E10 /* strnlen.h in Headers */,
 				52BEC7EE147D8A0200C35467 /* inffast.h in Headers */,
+				D8B5D2DA1B74CB670085040C /* auth_negotiate.h in Headers */,
 				52BEC7EF147D8A0200C35467 /* inffixed.h in Headers */,
 				4CA5BFAF198256FB00941E10 /* diff_file.h in Headers */,
 				4CA5BFCE198256FB00941E10 /* merge_file.h in Headers */,
 				52BEC7F1147D8A0200C35467 /* inflate.h in Headers */,
+				D8B5D2DC1B74CB670085040C /* auth.h in Headers */,
 				4CA5C01F1982618100941E10 /* xdiff.h in Headers */,
 				52BEC7F3147D8A0200C35467 /* inftrees.h in Headers */,
 				52BEC7F5147D8A0200C35467 /* trees.h in Headers */,
+				D8B5D2DD1B74CB670085040C /* cred.h in Headers */,
 				4CA5C02D1982618100941E10 /* xutils.h in Headers */,
 				4CA5C0231982618100941E10 /* xemit.h in Headers */,
 				52BEC7F6147D8A0200C35467 /* zconf.h in Headers */,
@@ -1103,11 +1176,13 @@
 				52BEC762147D89C400C35467 /* blob.c in Sources */,
 				4CA5BFA8198256FB00941E10 /* crlf.c in Sources */,
 				4CA5BFAA198256FB00941E10 /* delta.c in Sources */,
+				D8B5D2FF1B74CC460085040C /* transaction.c in Sources */,
 				4CA5BFCA198256FB00941E10 /* iterator.c in Sources */,
 				52BEC765147D89C400C35467 /* buffer.c in Sources */,
 				4CA5C02F1982618100941E10 /* cred.c in Sources */,
 				4CA5BFB3198256FB00941E10 /* diff_stats.c in Sources */,
 				52BEC767147D89C400C35467 /* cache.c in Sources */,
+				D8B5D2ED1B74CBF80085040C /* openssl_stream.c in Sources */,
 				52BEC76A147D89C400C35467 /* commit.c in Sources */,
 				4CA5BFA9198256FB00941E10 /* date.c in Sources */,
 				4CA5BFB9198256FB00941E10 /* fetchhead.c in Sources */,
@@ -1117,9 +1192,11 @@
 				52BEC76D147D89C400C35467 /* config_file.c in Sources */,
 				4CA5BFED198256FB00941E10 /* sortedcache.c in Sources */,
 				4CA5BFBF198256FB00941E10 /* graph.c in Sources */,
+				D8B5D2F81B74CC460085040C /* socket_stream.c in Sources */,
 				52BEC76E147D89C400C35467 /* config.c in Sources */,
 				52BEC770147D89C400C35467 /* delta-apply.c in Sources */,
 				4CA5BFBB198256FB00941E10 /* filter.c in Sources */,
+				D8B5D2E11B74CBE30085040C /* annotated_commit.c in Sources */,
 				4CA5BFAC198256FB00941E10 /* diff_driver.c in Sources */,
 				52BEC773147D89C400C35467 /* errors.c in Sources */,
 				4CA5BFE5198256FB00941E10 /* refdb.c in Sources */,
@@ -1137,6 +1214,7 @@
 				52BEC780147D89C400C35467 /* index.c in Sources */,
 				4CA5BFE1198256FB00941E10 /* push.c in Sources */,
 				4CA5C0301982618100941E10 /* cred_helpers.c in Sources */,
+				D8B5D2FA1B74CC460085040C /* stransport_stream.c in Sources */,
 				52BEC782147D89C400C35467 /* indexer.c in Sources */,
 				52BEC784147D89C400C35467 /* mwindow.c in Sources */,
 				52BEC786147D89C400C35467 /* netops.c in Sources */,
@@ -1154,9 +1232,11 @@
 				4CA5C0321982618100941E10 /* http.c in Sources */,
 				52BEC78D147D89C400C35467 /* oid.c in Sources */,
 				52BEC78E147D89C400C35467 /* pack.c in Sources */,
+				D8B5D2E31B74CBE30085040C /* describe.c in Sources */,
 				4CA5BF23198256C800941E10 /* attr_file.c in Sources */,
 				52BEC790147D89C400C35467 /* path.c in Sources */,
 				52BEC794147D89C400C35467 /* posix.c in Sources */,
+				D8B5D2DB1B74CB670085040C /* auth.c in Sources */,
 				4CA5BF97198256FB00941E10 /* blame_git.c in Sources */,
 				4CA5C0291982618100941E10 /* xprepare.c in Sources */,
 				4CA5C0361982618100941E10 /* smart_pkt.c in Sources */,
@@ -1171,6 +1251,7 @@
 				4CA5C03D1982618100941E10 /* realpath.c in Sources */,
 				52BEC7A1147D89C400C35467 /* refspec.c in Sources */,
 				52BEC7A3147D89C400C35467 /* remote.c in Sources */,
+				D8B5D2D91B74CB670085040C /* auth_negotiate.c in Sources */,
 				52BEC7A5147D89C400C35467 /* repository.c in Sources */,
 				4CA5BFD7198256FB00941E10 /* odb_mempack.c in Sources */,
 				52BEC7A7147D89C400C35467 /* revwalk.c in Sources */,
@@ -1201,6 +1282,7 @@
 				4CA5C0381982618100941E10 /* ssh.c in Sources */,
 				4CA5BFB4198256FB00941E10 /* diff_tform.c in Sources */,
 				4CA5BF9F198256FB00941E10 /* checkout.c in Sources */,
+				D8B5D2EF1B74CBF80085040C /* rebase.c in Sources */,
 				52BEC7BA147D89C400C35467 /* tree.c in Sources */,
 				52BEC7BC147D89C400C35467 /* tsort.c in Sources */,
 				4CA5C0341982618100941E10 /* smart.c in Sources */,
@@ -1215,6 +1297,7 @@
 				4CA5BFF6198256FB00941E10 /* sysdir.c in Sources */,
 				52BEC7EB147D8A0200C35467 /* deflate.c in Sources */,
 				52BEC7ED147D8A0200C35467 /* inffast.c in Sources */,
+				D8B5D2EB1B74CBF80085040C /* oidarray.c in Sources */,
 				4CA5BFBD198256FB00941E10 /* fnmatch.c in Sources */,
 				4CA5C03C1982618100941E10 /* realpath.c in Sources */,
 				4CA5BFE9198256FB00941E10 /* revert.c in Sources */,
@@ -1227,6 +1310,7 @@
 				52BEC7F0147D8A0200C35467 /* inflate.c in Sources */,
 				52BEC7F2147D8A0200C35467 /* inftrees.c in Sources */,
 				52BEC7F4147D8A0200C35467 /* trees.c in Sources */,
+				D8B5D2FD1B74CC460085040C /* tls_stream.c in Sources */,
 				52BEC7F8147D8A0200C35467 /* zutil.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
