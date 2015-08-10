@@ -261,6 +261,8 @@
 		52BEC7F7147D8A0200C35467 /* zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC7E3147D8A0200C35467 /* zlib.h */; };
 		52BEC7F8147D8A0200C35467 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 52BEC7E4147D8A0200C35467 /* zutil.c */; };
 		52BEC7F9147D8A0200C35467 /* zutil.h in Headers */ = {isa = PBXBuildFile; fileRef = 52BEC7E5147D8A0200C35467 /* zutil.h */; };
+		D83A45041B792B42001E8939 /* curl_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = D83A45021B792B42001E8939 /* curl_stream.c */; };
+		D83A45051B792B42001E8939 /* curl_stream.h in Headers */ = {isa = PBXBuildFile; fileRef = D83A45031B792B42001E8939 /* curl_stream.h */; };
 		D8B5D2D91B74CB670085040C /* auth_negotiate.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2D41B74CB670085040C /* auth_negotiate.c */; };
 		D8B5D2DA1B74CB670085040C /* auth_negotiate.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B5D2D51B74CB670085040C /* auth_negotiate.h */; };
 		D8B5D2DB1B74CB670085040C /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = D8B5D2D61B74CB670085040C /* auth.c */; };
@@ -540,6 +542,8 @@
 		52BEC7E3147D8A0200C35467 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
 		52BEC7E4147D8A0200C35467 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
 		52BEC7E5147D8A0200C35467 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		D83A45021B792B42001E8939 /* curl_stream.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = curl_stream.c; path = libgit2/src/curl_stream.c; sourceTree = SOURCE_ROOT; };
+		D83A45031B792B42001E8939 /* curl_stream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = curl_stream.h; path = libgit2/src/curl_stream.h; sourceTree = SOURCE_ROOT; };
 		D8B5D2D41B74CB670085040C /* auth_negotiate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth_negotiate.c; sourceTree = "<group>"; };
 		D8B5D2D51B74CB670085040C /* auth_negotiate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = auth_negotiate.h; sourceTree = "<group>"; };
 		D8B5D2D61B74CB670085040C /* auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth.c; sourceTree = "<group>"; };
@@ -587,6 +591,8 @@
 		4C0AC4DE1A3076480097B708 /* libgit2 */ = {
 			isa = PBXGroup;
 			children = (
+				D83A45021B792B42001E8939 /* curl_stream.c */,
+				D83A45031B792B42001E8939 /* curl_stream.h */,
 				52BEC7D3147D8A0200C35467 /* zlib */,
 				4CA5BF54198256FB00941E10 /* hash */,
 				52BEC7CF147D8A0200C35467 /* http-parser */,
@@ -1076,6 +1082,7 @@
 				D8B5D2DC1B74CB670085040C /* auth.h in Headers */,
 				4CA5C01F1982618100941E10 /* xdiff.h in Headers */,
 				52BEC7F3147D8A0200C35467 /* inftrees.h in Headers */,
+				D83A45051B792B42001E8939 /* curl_stream.h in Headers */,
 				52BEC7F5147D8A0200C35467 /* trees.h in Headers */,
 				D8B5D2DD1B74CB670085040C /* cred.h in Headers */,
 				4CA5C02D1982618100941E10 /* xutils.h in Headers */,
@@ -1257,6 +1264,7 @@
 				52BEC7A7147D89C400C35467 /* revwalk.c in Sources */,
 				4CA5BFA4198256FB00941E10 /* commit_list.c in Sources */,
 				4CA5BFDF198256FB00941E10 /* pool.c in Sources */,
+				D83A45041B792B42001E8939 /* curl_stream.c in Sources */,
 				52BEC7A8147D89C400C35467 /* sha1_lookup.c in Sources */,
 				52BEC7AC147D89C400C35467 /* signature.c in Sources */,
 				4CA5C0241982618100941E10 /* xhistogram.c in Sources */,
@@ -1413,7 +1421,10 @@
 				DSTROOT = /tmp/git2_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
-				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "GIT_SSL=1";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"GIT_SSL=1",
+					"GIT_OPENSSL=1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/libgit2/include",
 					"$(inherited)",
@@ -1437,6 +1448,10 @@
 				DSTROOT = /tmp/git2_iOS.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
+					"GIT_SSL=1",
+					"GIT_OPENSSL=1",
+				);
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/libgit2/include",
 					"$(inherited)",

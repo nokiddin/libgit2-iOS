@@ -1,4 +1,5 @@
 #ifdef GIT_SSL
+#define GIT_OPENSSL 1
 
 #include "gitsslctx.h"
 
