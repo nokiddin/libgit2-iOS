@@ -2,9 +2,23 @@ HOW TO BUILD libgit2-iOS
 ------------------------
 nokiddin 2014/12/12
 
+
+# 1. Fetch the sources
 make fetch
 
-# Set the INCLUDE or CPATH search paths. As we are cross-compiling, we need 
+# 2. Manually set the INCLUDE or CPATH search paths, read TECHNOTE below on INCLUDE paths
+     or, run the set-env script in THIRDPARTYHOME. The INCLUDE path must find the openssl headers.  
+
+# 3. Build. the default "make" will build both Debug and Release, but it can be controlled with a CONFIGURATION variable.
+
+make
+...or:
+ CONFIGURATION=Debug make  # to restrict only to Debug build.
+
+
+
+# ---- TECHNOTE ----
+# As we are cross-compiling, we need 
 # architecture specific header files. The /usr/include is generally valid only for 
 # the current OS architecture and not for the target architecture. In fact, 
 # having /usr/include in the INCLUDE path may actually break the build or worse still 
@@ -12,7 +26,3 @@ make fetch
 # system header files via its SDKs. The $(inherited) already takes care of it. 
 # In particular, openssl is not packaged in this SDK and that's why the INCLUDE 
 # variable should be used in those limited cases. 
-
-make
-...or:
- CONFIGURATION=Debug make  # to restrict only to Debug build.
